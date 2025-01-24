@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Cafe</title>
+    <style>
+        body {
+            background-color: #f2e8d5; /* Krem pozadina */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3e2723;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .menu-category {
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px; /* Povećana širina fleksboksova */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-category h2 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .menu-category ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-category ul li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2em;
+            margin: 12px 0;
+        }
+
+        .menu-category.kafa {
+            background-color: #ffe0b2; /* Svetlo narandžasta za Kafu */
+        }
+
+        .menu-category.caj {
+            background-color: #b2dfdb; /* Svetlo tirkizna za Čaj */
+        }
+
+        .menu-category.pivo {
+            background-color: #ffccbc; /* Svetlo breskvaste boje za Pivo */
+        }
+
+        .menu-category.vino {
+            background-color: #c5cae9; /* Svetlo ljubičasta za Vino */
+        }
+
+        .menu-category.zestina {
+            background-color: #d1c4e9; /* Svetlo lavanda za Žestinu */
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sara Cafe</h1>
+    </header>
+
+    <div class="menu-container">
+        <!-- Kafa -->
+        <div class="menu-category kafa">
+            <h2>Kafa</h2>
+            <ul>
+                <li><span>Espresso</span><span>220 din</span></li>
+                <li><span>Latte</span><span>240 din</span></li>
+                <li><span>Cappuccino</span><span>230 din</span></li>
+                <li><span>Americano</span><span>210 din</span></li>
+                <li><span>Macchiato</span><span>250 din</span></li>
+            </ul>
+        </div>
+
+        <!-- Caj -->
+        <div class="menu-category caj">
+            <h2>Čaj</h2>
+            <ul>
+                <li><span>Zeleni čaj</span><span>210 din</span></li>
+                <li><span>Crni čaj</span><span>220 din</span></li>
+                <li><span>Biljni čaj</span><span>200 din</span></li>
+                <li><span>Kamiličasti čaj</span><span>230 din</span></li>
+                <li><span>Frutni čaj</span><span>240 din</span></li>
+            </ul>
+        </div>
+
+        <!-- Pivo -->
+        <div class="menu-category pivo">
+            <h2>Pivo</h2>
+            <ul>
+                <li><span>Malo Pivo</span><span>210 din</span></li>
+                <li><span>Veliko Pivo</span><span>240 din</span></li>
+                <li><span>Malo Pivo</span><span>220 din</span></li>
+                <li><span>Veliko Pivo</span><span>250 din</span></li>
+                <li><span>Malo Pivo</span><span>230 din</span></li>
+            </ul>
+        </div>
+
+        <!-- Vino -->
+        <div class="menu-category vino">
+            <h2>Vino</h2>
+            <ul>
+                <li><span>Belo vino</span><span>220 din</span></li>
+                <li><span>Crveno vino</span><span>240 din</span></li>
+                <li><span>Rose vino</span><span>230 din</span></li>
+                <li><span>Svetlo vino</span><span>250 din</span></li>
+                <li><span>Suvo vino</span><span>210 din</span></li>
+            </ul>
+        </div>
+
+        <!-- Žestina -->
+        <div class="menu-category zestina">
+            <h2>Žestina</h2>
+            <ul>
+                <li><span>Rakija</span><span>240 din</span></li>
+                <li><span>Rum</span><span>220 din</span></li>
+                <li><span>Tequila</span><span>250 din</span></li>
+                <li><span>Vodka</span><span>230 din</span></li>
+                <li><span>Whisky</span><span>210 din</span></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
